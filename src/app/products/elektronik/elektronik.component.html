@@ -1,0 +1,20 @@
+<div *ngFor="let item of products">
+  <div class="card" style="width: 300px;"><a routerLink="../detail">
+      <img src="assets/img/ac-elektronik.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="product-name">{{item.product_name}}</p>
+        <div class="product-price">
+          <div class="rating">
+            <div class="price">{{item.price | currency : 'Rp.'}}</div>
+            <div class="start">
+              <img src="assets/icon/yellow-start.png" alt="" class="icon">
+              <img src="assets/icon/yellow-start.png" alt="" class="icon">
+              <img src="assets/icon/yellow-start.png" alt="" class="icon">
+              <img src="assets/icon/yellow-start.png" alt="" class="icon">
+              <img src="assets/icon/black-start.png" alt="" class="icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </a></div>
+</div>

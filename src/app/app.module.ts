@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { registerLocaleData } from '@angular/common';
+import localeId from '@angular/common/locales/id'; 
+registerLocaleData(localeId, 'id'); 
 
 //material
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -14,12 +17,16 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
-import { MenuKategoriComponent } from './menu-kategori/menu-kategori.component';
+import { CartComponent } from './cart/cart.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuKategoriComponent,
+    CartComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,9 @@ import { MenuKategoriComponent } from './menu-kategori/menu-kategori.component';
     NgbModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [ 
+    { provide: localeId, useValue: "id-ID" },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

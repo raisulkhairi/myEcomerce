@@ -1,0 +1,42 @@
+.rating img{
+    height: 16px;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+img.card-img-top {
+    height: 260px;
+    width: 298px;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+//menu
+.kategori-box{
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 6px;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.kategori-box ul{
+    display: flex;
+    margin-top: 15px;
+}
+.kategori-box ul li{
+    margin: 0 10px;
+    list-style: none;
+}
+.kategori-box a{
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+.kategori{
+    margin-bottom: 22px;
+}

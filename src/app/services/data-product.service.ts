@@ -5,12 +5,11 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class DataProductService {
-url="http://localhost:3000/product/all-data"
+url="http://localhost:5000/product/all-data"
   constructor(private http:HttpClient) { }
   products()
   {
-    return this.http.get(this.url).subscribe((data)=>{
-      console.log("data",data);
-    })
+    return this.http.get(this.url);
   }
 }
+  
