@@ -12,9 +12,9 @@ export class ElektronikComponent implements OnInit{
   constructor(private elektronikService : ElektronikService){}
 
   ngOnInit(): void {
-    this.elektronikService.getProductEl().subscribe((res)=>{
-      this.productEl = res
-      console.log(res)
+    this.elektronikService.getProductEl().subscribe((res:any)=>{
+      this.productEl = res.data
+      console.log(this.productEl)
     })
   }
 }
