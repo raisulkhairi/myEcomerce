@@ -7,8 +7,8 @@ import { RegisterComponent } from './register/register.component';
 const routes: Routes = [
 
   {
-    path:'products',
-    loadChildren:()=>import('./products/products.module').then(m=>m.ProductsModule)
+    path:'product',
+    loadChildren:()=>import('./product/product.module').then(m=>m.ProductModule)
   },
   {
     path:'cart',

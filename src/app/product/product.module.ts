@@ -1,28 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KategoriComponent } from './kategori/kategori.component';
-import { ProductsRouterModule } from './products-routing.module';
-import { ElektronikComponent } from './elektronik/elektronik.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { OtomotifComponent } from './otomotif/otomotif.component';
 import { FoodsComponent } from './foods/foods.component';
-import { ProductsComponent } from './products.component';
-
-
-
+import { ProductRouterModule } from './product-routing.module';
+import { ProductComponent } from './product.component';
 @NgModule({
   declarations: [
     KategoriComponent,
-    ElektronikComponent,
     FashionComponent,
     OtomotifComponent,
     FoodsComponent,
-    ProductsComponent,
-    
+    ProductComponent,
   ],
   imports: [
     CommonModule,
-    ProductsRouterModule
+    ProductRouterModule,
   ]
 })
-export class ProductsModule { }
+export class ProductModule { }

@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { DataProductService } from './services/data-product.service'
-
 
 @Component({
   selector: 'app-root',

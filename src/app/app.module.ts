@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import { RegisterComponent } from './register/register.component';
     BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [ 
     { provide: localeId, useValue: "id-ID" },

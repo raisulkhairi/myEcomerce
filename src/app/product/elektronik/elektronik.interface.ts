@@ -1,4 +1,4 @@
-export interface dataProduct{
+export interface Data{
     title :String;
     desc : String;
     img:string;
