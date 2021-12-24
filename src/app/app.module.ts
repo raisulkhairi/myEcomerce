@@ -21,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ProductsComponent } from './products/products.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,8 @@ import { RegisterComponent } from './register/register.component';
     CartComponent,
     LoginComponent,
     RegisterComponent,
+    ProductsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
